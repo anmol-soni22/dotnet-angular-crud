@@ -51,3 +51,12 @@ cd UI
 npm install
 ng serve
 ```
+### Screenshots :
+
+![image](https://github.com/anmol-soni22/dotnet-angular-crud/assets/85119300/161b53a4-be77-445f-b78f-a204da0d2ecd)
+
+![image](https://github.com/anmol-soni22/dotnet-angular-crud/assets/85119300/4e7c0007-3627-4c51-af10-4c9b1b84eec8)
+
+![image](https://github.com/anmol-soni22/dotnet-angular-crud/assets/85119300/1100cee5-ac09-44a7-ac28-1bd77fa77406)
+
+
