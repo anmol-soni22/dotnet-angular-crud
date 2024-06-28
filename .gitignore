@@ -5,6 +5,11 @@ dist/
 # Environment files
 src/environments/*.ts
 
+# Angular specific
+.angular/
+.angular/cache/
+
+
 # .NET Core
 *.obj
 *.dll
