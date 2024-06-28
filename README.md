@@ -57,6 +57,7 @@ ng serve
 
 ![image](https://github.com/anmol-soni22/dotnet-angular-crud/assets/85119300/4e7c0007-3627-4c51-af10-4c9b1b84eec8)
 
-![image](https://github.com/anmol-soni22/dotnet-angular-crud/assets/85119300/1100cee5-ac09-44a7-ac28-1bd77fa77406)
+![image](https://github.com/anmol-soni22/dotnet-angular-crud/assets/85119300/005830af-bdb5-4498-b9f5-2315fc1a5f1b)
+
 
 
