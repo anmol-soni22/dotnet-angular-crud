@@ -3,8 +3,11 @@
     <form (ngSubmit)="onFormSubmit()" [formGroup]="tasksForm" class="space-y-4">
       <h1 class="py-4 font-extrabold text-5xl text-gray-800">Task Management System</h1>
       <div>
-        <label for="name" class="block font-bold text-gray-700">Task Name</label>
+        <label for="name" class="block font-bold text-gray-700">Task Name *</label>
         <input type="text" class="w-full p-3 border-2 border-gray-300 rounded-sm mt-2" formControlName="name" required>
+        <div *ngIf="tasksForm.get('name')?.hasError('required') && (tasksForm.get('name')?.touched || tasksForm.get('name')?.dirty)">
+          <span class="text-red-500">Name is required.</span>
+        </div>
       </div>
       <div>
         <label for="description" class="block font-bold text-gray-700">Task Description</label>

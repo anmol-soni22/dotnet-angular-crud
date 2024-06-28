@@ -27,11 +27,24 @@ export class AppComponent {
   editingTaskId: string | null = null;
 
   onFormSubmit() {
-    if (this.isEditMode) {
-      this.onUpdate();
+    if (this.tasksForm.valid) {
+      if (this.isEditMode) {
+        this.onUpdate();
+      } else {
+        this.onAdd();
+      }
     } else {
-      this.onAdd();
+      this.markFormGroupTouched(this.tasksForm);
     }
+  }
+
+  markFormGroupTouched(formGroup: FormGroup) {
+    Object.values(formGroup.controls).forEach(control => {
+      control.markAsTouched();
+      if (control instanceof FormGroup) {
+        this.markFormGroupTouched(control);
+      }
+    });
   }
 
   onAdd() {
