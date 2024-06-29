@@ -26,19 +26,10 @@ cd dotnet-angular-crud
 ### Backend (API)
 
 #### Setup and Run .NET Core API
-
-1. Open the `API` folder in Visual Studio 2022:
-   - Launch Visual Studio 2022.
-   - Select "Open a project or solution".
-   - Navigate to the `API` folder within the cloned repository and open the `.csproj` file.
-
-2. Run the API:
-   - Press `F5` to start the API in debug mode, or `Ctrl + F5` to run without debugging.
-
-Alternatively, you can run the API from the command line:
-
 ```bash
 cd API
+dotnet restore
+dotnet build
 dotnet run
 ```
 
